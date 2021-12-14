@@ -1,0 +1,120 @@
+/***** BASE STYLES *****/
+body {
+    color:#000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/***** GRID *****/
+.entire{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/***** HEADER *****/
+header{
+    height: 110px;
+    margin: 0 auto;
+}
+header h1 {
+    float: left;
+    font-size: 30px;
+    padding: 40px 0;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px;
+}
+header nav{
+    float: right;
+    padding: 42px 0px;
+    font-weight: bold;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+header nav ul li{
+    display: inline;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+header nav ul li a{
+    color: #8aa77f;
+    text-decoration: none;
+}
+
+/***** TOP *****/
+.top{
+    margin: 0 auto;
+    clear: both;
+}
+.top img{
+    background: #8aa77f;
+    border-bottom: 4px solid #8aa77f;
+    border-top: 4px solid #8aa77f;
+}
+.top h3{
+    color: #8aa77f;
+    text-transform: uppercase;
+}
+.top p{
+    line-height: 25px;
+}
+/***** BOTTOM *****/
+
+.section-one, .section-two, .section-three{
+    width: 398px;
+    height: auto;
+    float: left;
+    border-top: 1px solid #dedbdc;
+}
+#bottom h4{
+    text-transform: uppercase;
+}
+.section-one h4{
+    padding: 5px 0;
+}
+.section-one ul{
+    list-style: none;
+    padding: 0;
+
+}
+.section-one ul li{
+    color: #8aa77f;
+    padding: 10px 0;
+}
+.section-two{
+    border-left: 2px solid #dedbdc;
+    border-right: 2px solid #dedbdc;
+}
+.section-two p{
+    color: #333;
+	font-size: 16px;
+	line-height: 21px;
+    padding: 0 30px;
+}
+.section-two h4, .section-three h4{
+    padding: 5px 30px;
+}
+.section-three p{
+    padding: 0 30px;
+    line-height: 24px;
+}
+/***** FOOTER *****/
+footer{
+    height: 50px;
+    margin: 0 auto;
+    clear: both;
+    border-top: 1px solid #dedbdc;
+    padding: 10px 0;
+}
+footer h4{
+    text-align: center;
+    text-transform: uppercase;
+}
+footer h4 span{
+    color: #77a466;
+    font-family: 'galada', cursive;
+    font-weight: lighter;
+    text-transform: lowercase;
+}
