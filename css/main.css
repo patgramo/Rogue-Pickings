@@ -1,120 +1,172 @@
-/***** BASE STYLES *****/
+html {
+	font-size: 16px;
+}
+
 body {
-    color:#000000;
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	font-size: 1em;
 }
 
-/***** GRID *****/
-.entire{
-    width: 1200px;
-    margin: 0 auto;
+.container{
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
-/***** HEADER *****/
-header{
-    height: 110px;
-    margin: 0 auto;
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
 }
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 21px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
 header h1 {
-    float: left;
-    font-size: 30px;
-    padding: 40px 0;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 0px;
+	margin: 0;
+	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
+	width: 100%;
+	text-align: center;
 }
-header nav{
-    float: right;
-    padding: 42px 0px;
-    font-weight: bold;
+header h1 span {
+	color: #77a466;
 }
-header nav ul{
-    margin: 0;
-    padding: 0;
+
+header nav {
+	padding: 15px 0;
 }
-header nav ul li{
-    display: inline;
-    padding: 0 10px;
-    text-transform: uppercase;
-    font-size: 14px;
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+	flex-flow: row wrap;
+	width: 100%;
+	padding: 10px 0;
 }
 header nav ul li a{
-    color: #8aa77f;
-    text-decoration: none;
+	text-decoration: none;
+	color:#77a466;
 }
 
-/***** TOP *****/
-.top{
-    margin: 0 auto;
-    clear: both;
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
-.top img{
-    background: #8aa77f;
-    border-bottom: 4px solid #8aa77f;
-    border-top: 4px solid #8aa77f;
-}
-.top h3{
-    color: #8aa77f;
-    text-transform: uppercase;
-}
-.top p{
-    line-height: 25px;
-}
-/***** BOTTOM *****/
 
-.section-one, .section-two, .section-three{
-    width: 398px;
-    height: auto;
-    float: left;
-    border-top: 1px solid #dedbdc;
+.main-image {
+	height: auto;
 }
-#bottom h4{
-    text-transform: uppercase;
+.main-image img {
+	width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
 }
-.section-one h4{
-    padding: 5px 0;
-}
-.section-one ul{
-    list-style: none;
-    padding: 0;
 
+.main-title h2 {
+	padding: 5px 0;
+	color: #77a466;
 }
-.section-one ul li{
-    color: #8aa77f;
-    padding: 10px 0;
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
 }
-.section-two{
-    border-left: 2px solid #dedbdc;
-    border-right: 2px solid #dedbdc;
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: row wrap;
 }
-.section-two p{
-    color: #333;
-	font-size: 16px;
+
+.section-one h3 {
+	padding: 10px 0;
+	width: 100%;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
 	line-height: 21px;
-    padding: 0 30px;
+	width: 100%;
 }
-.section-two h4, .section-three h4{
-    padding: 5px 30px;
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+	width: 100%;
 }
-.section-three p{
-    padding: 0 30px;
-    line-height: 24px;
+
+/*The widths are in a percentage!*/
+footer {
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
 }
-/***** FOOTER *****/
-footer{
-    height: 50px;
-    margin: 0 auto;
-    clear: both;
-    border-top: 1px solid #dedbdc;
-    padding: 10px 0;
-}
-footer h4{
-    text-align: center;
-    text-transform: uppercase;
-}
-footer h4 span{
-    color: #77a466;
-    font-family: 'galada', cursive;
-    font-weight: lighter;
-    text-transform: lowercase;
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875em;
 }
