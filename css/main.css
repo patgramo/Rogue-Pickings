@@ -48,6 +48,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-content: center;
 	flex-flow: row wrap;
 }
 
@@ -66,19 +67,20 @@ header nav {
 	padding: 15px 0;
 }
 header nav ul {
-	margin: 0;
-	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	display: flex;
-	justify-content: center;
-	align-content: space-around;
-	flex-flow: row wrap;
 	width: 100%;
-	padding: 10px 0;
+	list-style: none;
+	text-align: center;
+	padding: 10px;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -118,7 +120,6 @@ header nav ul li a{
 .section-two,
 .section-three {
 	width: 100%;
-	height: auto;
 	border-top: 1px solid #eee;
 	display: flex;
 	justify-content: flex-start;
@@ -127,7 +128,6 @@ header nav ul li a{
 }
 
 .section-one h3 {
-	padding: 10px 0;
 	width: 100%;
 }
 
@@ -169,4 +169,58 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+/******** TABLET ********/
+@media all and (min-width: 768px) {
+	.bottom-section {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: stretch;
+		border-top: 1px solid #eee;
+	}
+	.section-one,
+	.section-two,
+	.section-three {
+		flex-basis: 27%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		padding: 20px;
+		}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	
+}
+
+/******** DESKTOP ********/
+@media (min-width: 1200px) {
+	header {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 0 0 20px 0;
+	}
+	header nav{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		width: 70%;
+	}
+	header nav ul {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		width: 70%;
+	}
+
+	header h1 {
+		width: fit-content;
+		padding: 10px;
+	}
 }
